@@ -1,4 +1,4 @@
-# Generación Musical Predictiva con Modelos Secuenciales y Transformers
+# Generación Musical Predictiva con Transformers
 
 Este repositorio contiene una suite completa de algoritmos diseñados para la generación automática de música (formato MIDI) mediante el análisis y modelado de series de tiempo. Utilizando el conjunto de datos *MAESTRO v3.0.0, el proyecto explora modelos con arquitecturas profundas basadas en **Transformers Multi-Característica**.
 
