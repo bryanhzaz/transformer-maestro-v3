@@ -1,0 +1,59 @@
+============================================================
+  MÉTRICAS — Continuación desde época 50
+  Total épocas entrenadas: 100
+============================================================
+
+── CLASIFICACIÓN (PITCH) ──
+  Accuracy   : 0.5387
+  F1-Score   : 0.5386
+  Recall     : 0.5387
+  Perplexity : 5.5473
+  BLEU-1     : 0.6073
+  BLEU-2     : 0.4151
+  BLEU-4     : 0.2012
+
+── REGRESIÓN (STEP) ──
+  MSE : 0.100217 | MAE : 0.096273 | R² : 0.0748
+
+── REGRESIÓN (DURATION) ──
+  MSE : 0.112534 | MAE : 0.128844 | R² : 0.4288
+
+── REGRESIÓN (VELOCITY) ──
+  MSE : 0.009668 | MAE : 0.072856 | R² : 0.5566
+
+── COMPARATIVA CON MÉTRICAS PREVIAS ──
+  Accuracy    prev: 0.5201  →  ahora: 0.5387
+  R² Step     prev: 0.1271  →  ahora: 0.0748
+  R² Duration prev: 0.4427  →  ahora: 0.4288
+  R² Velocity prev: 0.5642  →  ahora: 0.5566
+
+
+── PRUEBAS ESTADÍSTICAS: ORIGINAL vs GENERADA ──
+
+[PITCH]
+  KL  Divergencia    : 4.716439
+  JS  Divergencia    : 0.402937  (0=idénticas)
+  Wasserstein Dist.  : 5.6928
+  KS  Estadístico    : 0.2472   p-valor = 4.0477e-07
+  JS  Pitch Class    : 0.307094  (similitud tonal)
+
+[STEP]
+  KS  Estadístico    : 0.7911   p-valor = 6.6185e-82
+  Mann-Whitney U     : 39736.00  p-valor = 5.6379e-55
+  Wasserstein Dist.  : 0.152554
+  Pearson r          : 0.0253
+
+[DURATION]
+  KS  Estadístico    : 0.8304   p-valor = 2.6663e-93
+  Mann-Whitney U     : 30975.00  p-valor = 1.6050e-60
+  Wasserstein Dist.  : 0.191558
+  Pearson r          : -0.1082
+
+[VELOCITY]
+  KS  Estadístico    : 0.2030   p-valor = 6.2936e-05
+  Wasserstein Dist.  : 0.050560
+  media orig=0.4912 gen=0.5371
+
+[PITCH   ] media orig=60.6125 gen=56.2578 | std orig=11.6872 gen=14.7516 | med orig=62.0000 gen=53.5000
+[STEP    ] media orig=0.0836 gen=0.2002 | std orig=0.1785 gen=0.0480 | med orig=0.0299 gen=0.2092
+[DURATION] media orig=0.1010 gen=0.2828 | std orig=0.1662 gen=0.1102 | med orig=0.0638 gen=0.2758

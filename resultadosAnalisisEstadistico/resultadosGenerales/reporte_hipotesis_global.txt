@@ -1,0 +1,36 @@
+======================================================================
+ REPORTE ESTADÍSTICO DE HIPÓTESIS - EVALUACIÓN TEST SET
+======================================================================
+
+HIPÓTESIS NULA (H0): La secuencia generada y la original provienen de la misma distribución subyacente.
+NIVEL DE SIGNIFICANCIA: alpha = 0.05
+
+--- ANÁLISIS DE LA DIMENSIÓN: PITCH ---
+  KL Divergencia Promedio : 1.4763
+  Dist. Wasserstein Prom. : 6.0647
+  Estadístico KS Promedio : 0.2428
+  Rechazo de H0           : En el 99.4% de las canciones evaluadas.
+  Media Global -> Orig: 64.2030 | Gen: 59.6303
+  Desv. Estand -> Orig: 12.5606 | Gen: 10.8079
+
+--- ANÁLISIS DE LA DIMENSIÓN: STEP ---
+  Dist. Wasserstein Prom. : 0.1341
+  Estadístico KS Promedio : 0.6528
+  Rechazo de H0           : En el 100.0% de las canciones evaluadas.
+  Media Global -> Orig: 0.1083 | Gen: 0.1962
+  Desv. Estand -> Orig: 0.1739 | Gen: 0.0539
+
+--- ANÁLISIS DE LA DIMENSIÓN: DURATION ---
+  Dist. Wasserstein Prom. : 0.2981
+  Estadístico KS Promedio : 0.5248
+  Rechazo de H0           : En el 100.0% de las canciones evaluadas.
+  Media Global -> Orig: 0.2228 | Gen: 0.4259
+  Desv. Estand -> Orig: 0.3377 | Gen: 0.2833
+
+--- ANÁLISIS DE LA DIMENSIÓN: VELOCITY ---
+  Dist. Wasserstein Prom. : 0.0811
+  Estadístico KS Promedio : 0.3192
+  Rechazo de H0           : En el 99.4% de las canciones evaluadas.
+  Media Global -> Orig: 0.5035 | Gen: 0.5038
+  Desv. Estand -> Orig: 0.1333 | Gen: 0.0899
+
